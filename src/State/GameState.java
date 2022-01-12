@@ -14,7 +14,7 @@ public class GameState extends State {
 
     public GameState(Handler handler){
         super(handler);
-        world=new World(handler,System.getProperty("user.dir")+"\\src\\Worlds\\world1.txt");
+        world=new World(handler,"/Users/rado/Documents/Java/Zombie game/ZombieGame/src/Worlds/world1.txt");
         handler.setWorld(world);
 
 
