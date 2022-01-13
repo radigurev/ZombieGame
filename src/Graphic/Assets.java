@@ -15,7 +15,7 @@ public class Assets {
     public static BufferedImage inventoryScreen, DoorReverse;
     public static void init() {
         //Sprite sheets
-        font=FontLoader.loadFont(System.getProperty("user.dir")+"\\src\\Images\\ARCADECLASSIC.TTF",28);
+        font=FontLoader.loadFont("/Users/rado/Documents/Java/Zombie game/ZombieGame/src/Images/ARCADECLASSIC.TTF",28);
         SpriteSheet sheet = new SpriteSheet(ImageLoader.loadImage("/Users/rado/Documents/Java/Zombie game/ZombieGame/src/Images/MainChWalkLeft-Sheet.png"));
         SpriteSheet sheet1 = new SpriteSheet(ImageLoader.loadImage("/Users/rado/Documents/Java/Zombie game/ZombieGame/src/Images/sheet.png"));
         SpriteSheet sheet2 = new SpriteSheet(ImageLoader.loadImage("/Users/rado/Documents/Java/Zombie game/ZombieGame/src/Images/MainChWalkRight-Sheet.png"));
