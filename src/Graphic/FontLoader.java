@@ -12,6 +12,7 @@ public class FontLoader {
         }catch (FontFormatException| IOException e) {
             e.printStackTrace();
             System.exit(1);
+            //
         }return null;
     }
 
