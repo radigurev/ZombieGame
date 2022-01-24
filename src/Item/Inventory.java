@@ -19,7 +19,7 @@ public class Inventory {
             invListSpacing = 30;
 
     private int invImageX=610,invImageY=203,invImageWidth=63,invImageHeight=64,
-        invCountX=633, invCountY=303;
+        invCountX=625, invCountY=303;
 
     private int selectedItem=0;
 

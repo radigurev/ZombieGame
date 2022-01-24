@@ -8,7 +8,7 @@ import java.awt.image.BufferedImage;
 public class Assets {
     private static final int width=80,height=80;
     public static Font font;
-    public static BufferedImage c1,c2,c3,c4,tree,wall,floor,wallLeft,wallUp,bed,topleftcorner,toprightcorner,
+    public static BufferedImage coin,wall,floor,wallLeft,wallUp,bed,topleftcorner,toprightcorner,
             rightwall,wallDown,DownLeftCorner,DownRightCorner,Thing,BedsideTable,Chair,Flower,HospitalBed,HospitalBedReverse,
             BedsideTableReverse,Chair2,Chair3,Bench1,Bench2,Door;
     public static BufferedImage[] ZombieRight,ZombieLeft,playerLeft,playerRight,Button,AttackRight,playerUp,playerDown,ZombieUp,ZombieDown,playerIdle,AttackLeft,AttackDown;
@@ -31,6 +31,7 @@ public class Assets {
         SpriteSheet attackDown=new SpriteSheet(ImageLoader.loadImage("/Users/rado/Documents/Java/Zombie game/ZombieGame/src/Images/AttackDown.png"));
 
         //basic picture
+        coin = ImageLoader.loadImage("/Users/rado/Documents/Java/Zombie game/ZombieGame/src/Images/goldCoin.png");
         inventoryScreen = (ImageLoader.loadImage("/Users/rado/Documents/Java/Zombie game/ZombieGame/src/Images/inventoryScreen.png"));
         floor=(ImageLoader.loadImage("/Users/rado/Documents/Java/Zombie game/ZombieGame/src/Images/FloorTile.png"));
         wall=(ImageLoader.loadImage("/Users/rado/Documents/Java/Zombie game/ZombieGame/src/Images/WallTiles.png"));

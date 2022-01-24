@@ -10,7 +10,7 @@ public class Item {
     // Handler
 
     public static Item[] items = new Item[256];
-    public static Item woodItem = new Item(Assets.tree, "Wood", 0);
+    public static Item coinItem = new Item(Assets.coin, "Gold Coin", 0);
 
     // Class
 

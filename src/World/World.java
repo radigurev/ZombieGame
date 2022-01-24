@@ -4,6 +4,7 @@ import Entity.EntityManager;
 import Entity.Humans.Player;
 import Entity.StaticEntities.*;
 import Entity.Zombie.Zombie;
+import Item.Item;
 import Item.ItemManager;
 import Tile.Tile;
 import Utils.Utils;
@@ -17,6 +18,7 @@ public class World {
     private int width, height;
     private int spawnX,spawnY;
     private int[][] tiles;
+    Zombie zombies[]=new Zombie[0];
     //Enteties
     private EntityManager entityManager;
     //Items
@@ -149,13 +151,16 @@ public class World {
             zombies[i].lookFor(entityManager.getPlayer());
 
             if(!zombies[i].isAlive()){
+                handler.getWorld().getItemManager()
+                        .addItem(Item.coinItem.createNew((int)zombies[i].getX()+zombies[i].getWidth()/2-15
+                                ,(int)zombies[i].getY()+zombies[i].getHeight()/2));
                 removeZombie(i);
             }
         }
     }
 
     ////////////////////////////////////Zombies
-    Zombie zombies[]=new Zombie[0];
+
 
     public void addZombie(float x,float y){
         zombies=Arrays.copyOf(zombies,zombies.length+1);

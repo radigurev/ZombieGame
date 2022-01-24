@@ -1,7 +1,5 @@
 package State;
 
-import Entity.Humans.Player;
-import Entity.StaticEntities.Tree;
 import World.World;
 import com.game.Handler;
 
