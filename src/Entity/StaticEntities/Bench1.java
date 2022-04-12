@@ -13,7 +13,7 @@ public class Bench1 extends StaticEntity{
         bounds.x=40;
         bounds.y=0;
         bounds.width=Tile.TileWidth*3-90;
-        bounds.height=Tile.TileHeight*3;
+        bounds.height=Tile.TileHeight*3+63;
     }
 
     @Override
@@ -29,13 +29,15 @@ public class Bench1 extends StaticEntity{
         g.drawImage(Assets.Bench1,(int) (x-handler.getGameCamera().getxOffset()),(int) (y-handler.getGameCamera().getyOffset()),width,height,null);
 
         //Visible hitbox
-/*
+    /*
         g.setColor(Color.CYAN);
 	g.fillRect((int) (x + bounds.x - handler.getGameCamera().getxOffset()),
 			(int) (y + bounds.y - handler.getGameCamera().getyOffset()),
 			bounds.width, bounds.height);
 
- */
+
+     */
+
 
 
     }

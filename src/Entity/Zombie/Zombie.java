@@ -29,8 +29,10 @@ public class Zombie extends Human{
 
     public Zombie(Handler handler,float x,float y){
         super(handler,x,y,Human.DefaultWidth,Human.DefaultHeight);
-        this.bounds.width=80;
-        this.bounds.height=80;
+        this.bounds.width=30;
+        this.bounds.height=55;
+        this.bounds.x=30;
+        this.bounds.y=35;
 
         this.viewRange=this.width*6;
 
@@ -157,12 +159,14 @@ public class Zombie extends Human{
         float cameraX=handler.getGameCamera().getxOffset();
         float cameraY=handler.getGameCamera().getyOffset();
 
-/*
+    /*
         g.setColor(Color.red);
 	g.fillRect((int) (x + bounds.x - handler.getGameCamera().getxOffset()),
 			(int) (y + bounds.y - handler.getGameCamera().getyOffset()),
 			bounds.width, bounds.height);
-*/
+
+
+     */
 
 
 

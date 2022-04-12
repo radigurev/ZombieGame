@@ -29,14 +29,16 @@ public class Bench2 extends StaticEntity{
         g.drawImage(Assets.Bench2,(int) (x-handler.getGameCamera().getxOffset()),(int) (y-handler.getGameCamera().getyOffset()),width,height,null);
 
         //Visible hitbox
-/*
+
         g.setColor(Color.CYAN);
 	g.fillRect((int) (x + bounds.x - handler.getGameCamera().getxOffset()),
 			(int) (y + bounds.y - handler.getGameCamera().getyOffset()),
 			bounds.width, bounds.height);
 
 
- */
+
+
+
 
 
 
